@@ -1,1 +1,3 @@
-console.log('restaurant page test');
+import initializeWebsite from './website';
+
+initializeWebsite();
