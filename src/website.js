@@ -1,36 +1,3 @@
-function createHeader() {
-  const header = document.createElement('header');
-
-  const titleContainer = document.createElement('div');
-  titleContainer.classList.add('image-container');
-
-  header.appendChild(titleContainer);
-  header.appendChild(createNav());
-
-  return header;
-}
-
-/*
-function createNav() {
-  const container = document.createElement('div');
-  container.classList.add('header-container');
-
-  const homeButton = document.createElement('button');
-  homeButton.classList.add('header-btn');
-  homeButton.textContent = 'Home';
-
-  const menuButton = document.createElement('button');
-  menuButton.classList.add('header-btn');
-  menuButton.textContent = 'Menu';
-
-  const contactButton = document.createElement('button');
-  contactButton.classList.add('header-btn');
-  contactButton.textContent = 'Contact';
-
-  return container;
-}
-*/
-
 function createContent() {
   const container = document.createElement('div');
 
@@ -67,11 +34,10 @@ function createFooter() {
   return footer;
 }
 
-function initializeWebsite() {
+function initializeWelcome() {
   const content = document.getElementById('content');
-  //content.appendChild(header);
   content.appendChild(createContent());
   content.appendChild(createFooter());
 }
 
-export default initializeWebsite;
+export default initializeWelcome;
