@@ -27,7 +27,8 @@ function createContent() {
 function createFooter() {
   const footer = document.createElement('footer');
   const text = document.createElement('p');
-  text.textContent = '© ${new Date().getFullYear()} Goten of Japan';
+  var date = new Date().getFullYear();
+  text.textContent = '© ' + date + ' Goten of Japan';
 
   footer.appendChild(text);
 
